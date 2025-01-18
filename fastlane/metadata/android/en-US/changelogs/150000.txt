@@ -1,0 +1,11 @@
+Date of release (dd/mm/yyyy): 18/01/2025
+Version: 1.5
+
+Changes:
+
+-Release is now signed with a release key
+
+Added:
+
+-Hash for "distributionSha256Sum"
+-"fastlane" added

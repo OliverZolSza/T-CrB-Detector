@@ -1,0 +1,1 @@
+T CrB Detector notifies the user when the star T CrB has exploded.

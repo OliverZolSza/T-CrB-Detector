@@ -1,0 +1,1 @@
+T CrB Detector notifies the user when the star T Coronae Borealis has exploded, and it also displays the current magnitude of the star at any moment. It is perfect for stargazers who are waiting patiently for this explosion.
