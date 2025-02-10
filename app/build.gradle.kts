@@ -11,13 +11,20 @@ android {
         applicationId = "com.oliverszabo.tcrbdetector"
         minSdk = 27
         targetSdk = 34
-        versionCode = 150000
-        versionName = "1.5"
+        versionCode = 155000
+        versionName = "1.5.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
+
+    dependenciesInfo {
+        // Disables dependency metadata when building APKs.
+        includeInApk = false
+        // Disables dependency metadata when building Android App Bundles.
+        includeInBundle = false
     }
 
     buildTypes {
