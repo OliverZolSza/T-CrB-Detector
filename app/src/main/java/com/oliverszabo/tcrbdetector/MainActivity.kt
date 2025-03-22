@@ -111,7 +111,7 @@ class MainActivity : ComponentActivity() {
         checkPermissionsAndScheduleWorker()
 
         coroutineScope.launch {
-            val valueDeferred = fetchWebsiteContent("https://theskylive.com/sky/stars/hr-5958-star")
+            val valueDeferred = fetchWebsiteContent("https://theskylive.com")
             val value = valueDeferred.await()
 
             val magnitudeTextView = findViewById<TextView>(R.id.magnitudeTextView)
@@ -152,7 +152,7 @@ class MainActivity : ComponentActivity() {
     }
     private fun extractMagnitude(htmlContent: String): String? {
         val document: Document = Jsoup.parse(htmlContent)
-        return document.select("div.keyinfobox ar").first()?.text()?.trim()
+        return document.select(".hilights li:has(number) number").first()?.text()?.trim()
     }
 
     //Handle Background Process
