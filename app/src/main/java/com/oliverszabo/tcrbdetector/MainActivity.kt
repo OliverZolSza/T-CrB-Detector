@@ -152,7 +152,7 @@ class MainActivity : ComponentActivity() {
     }
     private fun extractMagnitude(htmlContent: String): String? {
         val document: Document = Jsoup.parse(htmlContent)
-        return document.select(".hilights li:has(number) number").first()?.text()?.trim()
+        return document.select(".hilights li:has(number):has(a[href*='/sky/stars/hr-5958-star']) number").first()?.text()?.trim()
     }
 
     //Handle Background Process
