@@ -11,8 +11,8 @@ android {
         applicationId = "com.oliverszabo.tcrbdetector"
         minSdk = 27
         targetSdk = 34
-        versionCode = 250000
-        versionName = "2.5"
+        versionCode = 300000
+        versionName = "3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
